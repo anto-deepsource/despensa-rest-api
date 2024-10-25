@@ -22,6 +22,7 @@ public class ServletInitializer extends SpringBootServletInitializer {
         if (x.equals(null)) {
             doSomething();
         }
+        Integer value = 1;
         try {
           // ...
         } catch (...) {
