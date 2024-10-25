@@ -22,6 +22,10 @@ public class ServletInitializer extends SpringBootServletInitializer {
         m.put(3 ,4);
         m.put(4, 2);
         m.get(4);
+        String x = "foo";
+        if (x.equals(null)) {
+            doSomething();
+        }
         return application.sources(DespensaRestApiApplication.class);
     }
 
