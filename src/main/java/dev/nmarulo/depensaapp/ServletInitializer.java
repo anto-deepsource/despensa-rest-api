@@ -18,14 +18,18 @@ public class ServletInitializer extends SpringBootServletInitializer {
         for (HashMap.Entry<URL, Integer> e : hits) {
             // ... This can become very slow for larger hashmaps of URLS.
         }
-        final ConcurrentMap<Integer, Integer> m = new ConcurrentSkipListMap<>();
-        m.put(3 ,4);
-        m.put(4, 2);
-        m.get(4);
         String x = "foo";
         if (x.equals(null)) {
             doSomething();
         }
+        try {
+          // ...
+        } catch (...) {
+          // ...
+            value = null; // Value set to null within a catch block
+          // ...
+        }
+        value.member += 1;
         return application.sources(DespensaRestApiApplication.class);
     }
 
